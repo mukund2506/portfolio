@@ -1,0 +1,126 @@
+/* Style.css */
+
+/* Apply styles to the body */
+body {
+	font-family: "Ubuntu", sans-serif;
+	background-color: #f0f0f0;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/* Style the container */
+.container {
+	background-color: #fff;
+	box-shadow: 0px 0px 10px
+		rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Style the header */
+.header {
+	text-align: center;
+    width: 30%;
+}
+
+/* Style the h1 element */
+h1 {
+	font-size: 28px;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+/* Style the hr element */
+hr {
+	border: 1px solid #ddd;
+	margin: 20px 0;
+}
+
+/* Style the input field */
+input[type="text"] {
+	width: 60%;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+}
+
+/* Style the QR code div */
+.qrcode {
+	margin:5% 25%;
+}
+
+/* Style the button */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    width: 20%;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Hover effect for the button */
+button:hover {
+	background-color: #0056b3;
+}
+/* CSS for mobile devices */
+@media only screen and (max-width: 767px) {
+    /* Define styles for mobile devices here */
+    .header {
+        background: white;
+        width: 80%;
+        height:40%;
+        border-radius: 24px;
+	    font-size:40px;
+    }
+}
+/* footer */
+p {
+    font-size: 16px;
+    color: gray;
+    font-family: sans-serif;
+}
+
+
+/* CSS for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Define styles for tablets here */
+    .header {
+        background: white;
+        width: 80%;
+        border-radius: 24px;
+         height:40%;
+    }
+	
+p {
+    font-size: 20px;
+    color: gray;
+    font-family: sans-serif;
+}
+*{
+	font-size: 20px;
+}
+   .qrcode {
+        margin: 20% 30%;
+    }
+}
+
+/* CSS for laptops and larger screens */
+@media only screen and (min-width: 1024px) {
+    /* Define styles for laptops and larger screens here */
+    .header {
+        /* Example laptop styles */
+        background-color: rgb(255, 255, 255);
+        border-radius: 24px;   
+    }
+}

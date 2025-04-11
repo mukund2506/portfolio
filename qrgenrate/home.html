@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="./home.css" />
+
+	<!-- External QR code library -->
+	<!--This is the liberary which helps
+		to convert simple data to the images-->
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+	</script>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+	<div class="header">
+		<div class="box">
+			<h1>
+				QR Code Generator
+			</h1>
+			<hr />
+			<input type="text"
+				placeholder="Type Data To Genrate a data"
+				onchange="generateQr()"  />
+        <button onclick="generateQr()" type="submit" >submit</button>
+        <div class="sqrcode"></div>
+        <div class="qrcode"></div><hr>
+        <footer><p>Copyright © 2024 @Mukund Jagani. All Rights Reserved.</p></footer>
+</div>
+</div>
+    	<script src="./home.js"></script>
+</body>
+
+</html>
