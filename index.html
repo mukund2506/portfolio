@@ -11,18 +11,6 @@
     <style>
         /* styles.css */
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #a9fdf2;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-
 .typing {
     display: inline-block;
     padding: 20px;
@@ -39,39 +27,6 @@ body {
     animation: blink 0.7s infinite;
 }
 
-@keyframes typing {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-@keyframes colorChange {
-
-    0%,
-    100% {
-        color: rgba(60, 0, 255, 0.897);
-    }
-
-    50% {
-        color: rgba(255, 5, 5, 0.897);
-    }
-}
-
-@keyframes blink {
-
-    0%,
-    100% {
-        background-color: transparent;
-    }
-
-    50% {
-        background-color: rgb(0, 0, 0);
-    }
-}
     </style>
 </head>
 <body>
@@ -511,7 +466,7 @@ body {
     <script>
         //main.js
 
-let a = ["Learn DSA", "Learn JavaScript", "Learn ReactJS", "Learn JAVA"];
+let a = ["Full Stack Devloper", "Salesforce Devloper","Salesforce Admin"];
 let ref = document.getElementById("text");
 let ind = 0, cInd = 0;
 let remove = false;
@@ -540,6 +495,7 @@ function typing() {
 typing();
     </script>
 </html>
+
 
 
 
