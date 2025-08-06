@@ -9,11 +9,68 @@
     <link rel="stylesheet" href="index1.css">
     <script src="./index.js"></script>
     <style>
-        .typed-out {
-  overflow: hidden;
-  border-right: .15em solid orange;
-  font-size: 1.6rem;
-  width: 0;
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a9fdf2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.typing {
+    display: inline-block;
+    padding: 20px;
+    font-size: 90px;
+    color: rgba(60, 0, 255, 0.897);
+    animation: typing 3s steps(20, end), colorChange 3s ease-in-out infinite;
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 60px;
+    background-color: rgb(204, 240, 0);
+    animation: blink 0.7s infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes colorChange {
+
+    0%,
+    100% {
+        color: rgba(60, 0, 255, 0.897);
+    }
+
+    50% {
+        color: rgba(255, 5, 5, 0.897);
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: rgb(0, 0, 0);
+    }
 }
     </style>
 </head>
@@ -56,7 +113,9 @@
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Mukund Jagani</h1>
-      <div class="typed-out">Web Developer</div>
+            <div class="typing"><span id="text"></span>
+            <div class="cursor"></div>
+        </div>
             <p class="section__text__p2">web Developer</p>
             <div class="btn-container">
                 <a href="asset/Mukund Jagani Resume Salesforce.pdf" rel="">
@@ -449,8 +508,39 @@
         <p>Copyright &#169; 2024 @Mukund Jagani. All Rights Reserved.</p>
     </footer>
 </body>
-    <script></script>
+    <script>
+        //main.js
+
+let a = ["Learn DSA", "Learn JavaScript", "Learn ReactJS", "Learn JAVA"];
+let ref = document.getElementById("text");
+let ind = 0, cInd = 0;
+let remove = false;
+
+function typing() {
+    if (ind < a.length) {
+        let currentText = a[ind];
+        if (!remove && cInd < currentText.length) {
+            ref.textContent += currentText.charAt(cInd);
+            cInd++;
+            setTimeout(typing, 100);
+        } else if (remove && cInd >= 0) {
+            ref.textContent = currentText.substring(0, cInd);
+            cInd--;
+            setTimeout(typing, 100);
+        } else {
+            remove = !remove;
+            if (!remove) {
+                ind = (ind + 1) % a.length;
+            }
+            setTimeout(typing, 1000);
+        }
+    }
+}
+
+typing();
+    </script>
 </html>
+
 
 
 
