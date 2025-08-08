@@ -4,9 +4,3 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
   }
-  function functiontheme(){
-
-  }
-  function toggleTheme() {
-    document.body.classList.toggle('dark-mode');
-}
