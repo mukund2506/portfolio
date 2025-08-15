@@ -511,3 +511,38 @@ body {
   color: aliceblue;
 
 }
+/* Go to Top Button */
+#goTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    display: none; /* Hidden by default */
+}
+
+#goTopBtn:hover {
+    background-color: #ffd700;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Smaller screen adjustments */
+@media (max-width: 600px) {
+    #goTopBtn {
+        font-size: 16px;
+        padding: 10px 12px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
