@@ -25,7 +25,25 @@
     background-color:rgb(85 85 85);
     animation: blink 0.7s infinite;
 }
-
+#goTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    z-index: 99;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+#goTopBtn:hover {
+    background-color: #555;
+}
     </style>
 </head>
 <body>
@@ -136,18 +154,18 @@
                 </div>
             </div> --> <p>
       I’m a <strong>Salesforce Developer/Admin</strong> and <strong>Web Developer</strong>, passionate about building efficient and user-friendly solutions that solve real-world problems.
-    
+
 
 
       As a <strong>skilled fresher</strong>, I bring hands-on experience in Salesforce administration, including user management, custom objects, workflows, reports, and dashboards. I'm also gaining strong proficiency in Salesforce development using <strong>Apex</strong>, <strong>Visualforce</strong>, and <strong>Lightning Web Components (LWC)</strong>.
-    
+
 
 
       On the web development side, I’m proficient in <strong>HTML, CSS, JavaScript, AJAX, jQuery</strong>, and   and <strong>JSON</strong>. I also have a foundational understanding of <strong>SQL</strong> and <strong>MongoDB</strong> databases.
 
 
 <br>      I’m always eager to learn and grow in dynamic environments, where I can leverage my technical skills to tackle complex challenges, contribute to innovative projects, and continuously expand my knowledge.
-    
+
 
 
       My goal is to deliver high-quality, responsive, and scalable applications that add value to both users and organizations.
@@ -262,14 +280,14 @@
                                 <h3>Approval Process</h3>
                                 <p>Intermediate</p>
                             </div>
-                        </article> 
+                        </article>
                          <article>
                             <img decoding="async" src="asset/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
                                 <h3>Experience Cloud</h3>
                                 <p>Intermediate</p>
                             </div>
-                        </article> 
+                        </article>
                         <article>
                             <img decoding="async" src="asset/checkmark.png" alt="Experience icon" class="icon" />
                             <div>
@@ -385,7 +403,7 @@
         </div>
         <!-- <img decoding="async" src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" /> -->
     </section>
-    <!-- blog section  
+    <!-- blog section
     <section id="blogs">
         <p class="section__text__p1">Have a Look on My Recent</p>
         <h1 class="title">Blogs</h1><br>
@@ -404,7 +422,7 @@
                         </a>
                         <!-- <button class="btn btn-color-2 project-btn">
               Live Demo
-            </button> 
+            </button>
                     </div>
                 </div>
                 <div class="details-container color-container">
@@ -420,7 +438,7 @@
                         </a>
                         <!-- <button class="btn btn-color-2 project-btn">
               Live Demo
-            </button> 
+            </button>
                     </div>
                 </div>
                 <div class="details-container color-container">
@@ -437,12 +455,12 @@
                         </a>
                        <!-- <button class="btn btn-color-2 project-btn">
               Live Demo
-            </button> 
+            </button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <img decoding="async" src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" /> 
+        <!-- <img decoding="async" src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
     </section>
 -->
 
@@ -465,10 +483,9 @@
                 <p><a  href="https://www.linkedin.com/in/mukund-jagani/" target="_blank" rel="noopener">LinkedIn</a></p>
             </div>
         </div>
-    </section>
 
+    </section>
     <!-- footer section  -->
-  <button id="goTopBtn" title="Go to top">↑</button>
     <footer>
         <nav>
             <div class="nav-links-container">
@@ -479,11 +496,12 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+
             </div>
         </nav><br><br>
         <p>Copyright &#169; 2024 @Mukund Jagani. All Rights Reserved.</p>
     </footer>
-   <button id="goTopBtn" title="Go to top">↑</button>
+    <button id="goTopBtn" title="Go to top">&#8679;</button>
 
 </body>
     <script>
@@ -514,35 +532,22 @@ function typing() {
 }
 
 typing();
+/* Go to Top Button Functionality */
+let goTopBtn = document.getElementById("goTopBtn");
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        goTopBtn.style.display = "block";
+    } else {
+        goTopBtn.style.display = "none";
+    }
+};
+
+goTopBtn.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
     </script>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
