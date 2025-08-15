@@ -518,7 +518,7 @@ body {
     right: 20px;
     z-index: 999;
     font-size: 20px;
-    width: 3%;
+    width: 12%;
     border: none;
     outline: none;
     background-color: black;
@@ -548,9 +548,8 @@ body {
     #goTopBtn {
         font-size: 16px;
         padding: 10px 12px;
-        bottom: 15px;
-        right: 15px;
     }
 }
+
 
 
