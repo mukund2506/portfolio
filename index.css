@@ -2,6 +2,10 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-user-select: none; /* Chrome, Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;         /* Standard */
 }
 
 body {
@@ -173,8 +177,8 @@ section {
 }
 #profile1{
   border-radius: 50%;
-  /* width: 23rem;
-  height: 23rem; */
+  width: 95%;
+  height:95%;
 }
 
 .section__pic-container {
