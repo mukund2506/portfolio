@@ -75,9 +75,15 @@
 
     #profile {
       height: 83vh;
+      /* width:54%; */
       margin-bottom: 0;
     }
+    #profile1 {
+    border-radius: 50%;
+    width: 55%;
+    height: 92%;
 
+}
     article {
       font-size: 1rem;
     }
